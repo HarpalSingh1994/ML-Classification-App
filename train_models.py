@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 import os
 import joblib
 from sklearn.datasets import load_breast_cancer
@@ -37,7 +36,7 @@ joblib.dump(scaler, 'model/scaler.pkl')
 test_data = X_test.copy()
 test_data['target'] = y_test
 test_data.to_csv('test_data.csv', index=False)
-print("Test data saved as 'test_data.csv' (Use this to upload in the app)")
+print("Test data saved as 'test_data.csv'")
 
 # 2. Model Initialization
 # ---------------------------------------------------------
